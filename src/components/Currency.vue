@@ -11,8 +11,8 @@
       <tbody>
         <tr v-for="(currency, index) in data" :key="index">
           <td>{{currency.ccy}}</td>
-          <td>{{currency.buy | aroundCurr(1)}}</td>
-          <td>{{currency.sale | aroundCurr(1)}}</td>
+          <td>{{currency.buy | aroundCurr}}</td>
+          <td>{{currency.sale | aroundCurr}}</td>
         </tr>
       </tbody>
     </table>  
